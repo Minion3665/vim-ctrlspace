@@ -135,9 +135,9 @@ function! ctrlspace#window#GoToStartWindow() abort
     silent! exe t:CtrlSpaceStartWindow . "wincmd w"
 
     if winrestcmd() != t:CtrlSpaceWinrestcmd
-        echom t:CtrlSpaceWinrestcmd
-        echom winrestcmd()
-        silent! exe t:CtrlSpaceWinrestcmd
+        " echom t:CtrlSpaceWinrestcmd
+        " echom winrestcmd()
+        " silent! exe t:CtrlSpaceWinrestcmd
 
         if winrestcmd() != t:CtrlSpaceWinrestcmd
             wincmd =
